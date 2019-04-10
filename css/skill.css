@@ -1,0 +1,20 @@
+body{
+  width:570px;
+  height:600px;
+  background-color: #9CEAEF;
+}
+*{
+  margin:0px;
+  padding:0px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+h1{
+  background-color:
+}
+p{
+  font-size: 18px;
+}

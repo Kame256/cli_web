@@ -1,0 +1,74 @@
+body{background-color:#66FFFF; }
+*{
+  margin:0px;
+  padding:0px;
+}
+
+.index{
+  display:block;
+  position: fixed;
+  bottom: 0;
+  background-color: #317477;
+  border:10px;
+  position: fixed;
+}
+ .anchor {
+   margin-top:-20px;
+   padding-top:20px;
+   overflow : hidden;
+   outline : none;
+  }
+.container{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+
+}
+.item1{
+  width:200;
+}
+.item2{
+  background-color: #9CEAEF;
+}
+table,th{
+  width:200px;
+  border: solid 2px;
+  border-collapse: collapse;
+}
+iframe{
+  width:592px;
+  height:600px;
+}
+a {
+  text-decoration: none;
+}
+
+.Skill{
+  background-color: #B27E65;
+}
+.Skill > .container>.item2{
+  background-color: #FFCB7F;
+}
+
+.Study{
+  background-color: #00B7E5 ;
+}
+
+.Study > .container>.item2{
+  background-color:#D9E4D8;
+}
+
+.Hobby{
+  background-color:#FF80FF;
+}
+.Hobby > .container>.item2{
+  background-color:#FFFF98;
+}
+
+.Job{
+  background-color:
+}
+
+.Job > .container>.item2{
+  background-color:
+}

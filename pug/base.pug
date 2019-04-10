@@ -1,0 +1,12 @@
+html(lang="ja")
+ head
+  
+  table: tbody 
+   each list in skill_list
+    tr: th
+     a(target=tage,href=list.page) !{list.name}
+
+     table: tbody
+      each list in hobby_list
+       tr: th 
+        a(target=tage,href=list.page) !{list.name}

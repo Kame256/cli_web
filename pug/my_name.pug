@@ -1,0 +1,82 @@
+doctype html
+html
+  head
+    meta(charaset='UTF-8')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    title Cli_portfolio
+    link(rel='stylesheet', href='parallel_phone.css', media='screen and (max-width: 720px)')
+    link(rel='stylesheet', href='parallel.css')
+    link(rel='stylesheet', href='my_name.css')
+    link(rel='index', href='prof.html')
+    link(rel='index', href='skill.html')
+  body
+    a(name='top')
+    div
+      ul.nav
+        li
+          a(href='#top') Home
+        li
+          a(href='active.html') Active
+        li
+          a(href='freedom.html') Freedom
+        li Work
+        li portfolio
+        li
+          a(href='#contact') contact
+    .title
+      a(name='title')
+      h1
+        img(src='32216E4F-256E-4F31-B070-0E6106B67A00.jpg', alt='none')
+        a.title(href='#prof') Helllo World
+    .prof
+      a(name='prof')
+        h1 Better late than never
+      h2.prof ざっくり　about me
+      img.prof(src='アイコン.jpg', alt='profile_img')
+      table
+        tbody
+          tr
+            th 名前
+            td 亀谷　浩也
+          tr
+            th 学校
+            td 公立はこだて未来大学　複雑系知能学科
+          tr
+            th スキル
+            td C言語,Python,JAVA,HTML,CSS,
+          tr
+            th 趣味
+            td ゲーム,ボーリング,筋トレ,スケボー
+      p#bottom anko
+    .contact
+      .container
+        .item1
+          a(name='contact')
+            p お問い合わせ
+          form(action='anko', method='post')
+            | お名前(必須)
+            br
+            input(required='', type='text', name='name')
+            br
+            |       企業または大学(自由記入)
+            br
+            input(type='text', name='from')
+            br
+            |       メールアドレス(必須)
+            br
+            input(required='', type='text', name='mail', placeholder='anko@inko.com', pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')
+            br
+        .item2
+          .flex_in
+            | お問い合わせの種類：　
+            select(name='select_type')
+              option(selicted='-') ----
+              option(value='opinion') ご意見
+              option(value='failure') 不具合
+              option(value='hope') 願望
+            br
+            |       内容
+            br
+            textarea(type='message', name='message')
+            br
+            input(type='submit')

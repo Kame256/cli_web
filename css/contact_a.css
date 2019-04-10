@@ -1,0 +1,24 @@
+.contact{
+  display: flex;
+  flex-direction: row;
+}
+.item{
+  flex:0 1 auto;
+  background-color: #FE5D26;
+  border-collapse:collapse ;
+  border: medium solid #ff00ff;
+}
+.item2{
+  flex:0 2 auto;
+  background-color: #7EBC89;
+}
+textarea{
+  font-size: 18px;
+}
+.flex_in textarea{
+  row:5;
+  width:90%;
+}
+div{
+  border:auto;
+}
