@@ -10,7 +10,6 @@ body{background-color:#66FFFF; }
   bottom: 0;
   background-color: #317477;
   border:10px;
-  position: fixed;
 }
  .anchor {
    margin-top:-20px;
