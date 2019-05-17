@@ -4,9 +4,10 @@ html
     meta(charaset='UTF-8')
     meta(name='viewport', content='width=device-width,initial-scale=1')
     title Cli_portfolio
-    link(rel='stylesheet', href='css/parallel_phone.css', media='screen and (max-width: 720px)')
+    //-link(rel='stylesheet', href='css/parallel_phone.css', media='screen and (max-width: 720px)')
     link(rel='stylesheet', href='../css/parallel.css')
     link(rel='stylesheet', href='../css/top.css')
+    //-link(rel='stylesheet', href='../css/sp_top.css',media='screen and(max-width:600px)')
     link(rel='index', href='prof.html')
     link(rel='index', href='skill.html')
   body
@@ -18,13 +19,13 @@ html
       h1
         img(src='../picture/with_fox01.jpg', alt='none')
         //-a.title(href='#prof') Helllo World
+    h2 ざっくり about me
     .prof
       //.policy
         h1 Applying DCPA cycle      
       .my_image
        img.prof(src='../picture/icon02.jpg', alt='profile_img')
       .introduction
-       h2 ざっくり about me
         table
           tbody
             tr
@@ -38,34 +39,34 @@ html
                 td 徳島 → 北海道(函館)           
             tr
               th 趣味
-              td ゲーム,ボーリング,筋トレ,スケボー
+              td ボーリング,筋トレ,スケボー,ゲーム
             tr
               th 言語
               td Python,JAVA,HTML,CSS,C言語;
     br
     br
+    h2 ページ一覧
     .contents
      .menu
-      h1 ページ紹介
       ul
-       li this page
-       li freedom
-       li active
-       li Work
-       li portfolio
-       li contact
+       li this page       
+       li: a(href="active.html") active
+       li: a(href="freedom.html") freedom
+       li: a(href="work.html") Work
+       li: a(href="portfolio.html") portfolio
+       li: a(href="contact") contact
      .text
-      .this_page
+      .text_item
        include includes/top/this_page
-      .active
+      .text_item
        include includes/top/active
-      .freedom
+      .text_item
        include includes/top/freedom
-      .work
+      .text_item
        include includes/top/work
-      .portfolio
+      .text_item
        include includes/top/portfolio
-      .contact
+      .text_item
        include includes/top/contact
       
 //-     p#bottom anko
