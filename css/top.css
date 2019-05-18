@@ -137,6 +137,12 @@ contents
   height:calc(100%/2);
   width:calc(100%/3);
 }
+.text_item h1{
+  font-size: 2vw;
+}
+.text_item p{
+  font-size: 1vmin
+}
 
 /*700px*/
 @media screen and (max-width: 750px) {
