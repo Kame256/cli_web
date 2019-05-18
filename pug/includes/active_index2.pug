@@ -1,0 +1,150 @@
+
+
+- var skill="skill"
+-
+ var tage=[
+  "skill",
+  "study",
+  "hobby",
+  "job"  
+ ];
+-
+ var tage_page=[
+  "active/skill.html",
+  "active/study.html",
+  "active/hobby.html",
+  "active/job.html"
+ ]
+-
+ var skill_list = [
+     {
+      page:"active/pro_c.html" ,
+        name:'C言語',
+      },
+      {
+        page: "active/python.html",
+        name: 'Python',
+      },
+      {
+        page: "active/html_css.html",
+        name: 'Html&CSS',
+      },
+      {
+        page: "active/java.html",
+        name: 'JAVA',
+      },
+      {
+        page: "active/skill_etc.html",
+        name: 'etc',
+      },
+ ];
+ 
+-
+ var study_list　= [
+     {
+        page:"active/math.html" ,
+        name:'数学',
+      },
+      {
+        page: "active/pograming.html",
+        name: 'プログラミング',
+      },
+      {
+        page: "active/project.html",
+        name: 'システム情報科学演習',
+      },
+      {
+        page: "active/graduation_reserch.html",
+        name: '卒業研究',
+      },
+      {
+        page: "active/study_etc.html",
+        name: 'etc',
+      },
+ ];
+
+-
+ var hobby_list= [
+     {
+       page: "active/muscle_traning.html",
+       name: '筋力トレーニング',
+     },
+     {
+      page:"active/game.html" ,
+        name: 's: ゲーム',
+      },
+      {
+       page: "active/boring.html",
+       name: 'ボーリング',
+      },      
+      {
+        page: "active/skateboard.html",
+        name: 'スケートボード',
+      },
+      {
+        page: "active/study_etc.html",
+        name: 'etc',
+      },
+ ];
+ 
+-
+ var job_list= [
+  {
+    page: "active/stuff.html",
+    name: 'ホールスタッフ',
+  },
+  {
+   page:"active/seicomart.html" ,
+     name: 'セイコーマート',
+   },
+   {
+    page: "active/cpw.html",
+    name: 'クロス・プロップ・ワークス',
+   },   
+ ];
+
+ //block ページ
+.Skill
+ .container
+  .item1
+   h1: a(class="anchor",target=tage[0],href=tage_page[0],name=tage[0]) Skill
+   table: tbody 
+    each list in skill_list
+     tr: th
+      a(target=tage[0],href=list.page) !{list.name}
+  .item2
+   iframe(scr=tage_page[0],name=tage[0])
+  br
+.Study
+ .container
+  .item1
+   h1: a(class="anchor",target=tage[1],href=tage_page[1],name=tage[1]) Study
+   table: tbody 
+    each list in study_list
+     tr: th 
+      a(target=tage[1],href=list.page) !{list.name}
+  .item2
+   iframe(scr=tage_page[1],name=tage[1])
+ br
+.Hobby
+ .container
+  .item1
+   h1: a(class="anchor",target=tage[2],href=tage_page[2],name=tage[2]) Hobby
+   table: tbody
+    each list in hobby_list
+     tr: th 
+      a(target=tage[2],href=list.page) !{list.name}
+  .item2
+   iframe(scr=tage_page[2],name=tage[2])
+ br
+.Job
+ .container
+  .item1
+   h1: a(class="anchor",target=tage[3],href=tage_page[3],name=tage[3]) Job
+   table: tbody
+    each list in job_list
+     tr: th
+      a(target=tage[3],href=list.page) !{list.name}
+  .item2
+   iframe(scr=tage_page[3],name=tage[3])
+ br

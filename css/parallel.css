@@ -34,12 +34,12 @@ text-decoration:underline;
 /*クリック後*/
 a:visited {
 color:#fff;
-text-decoration:underline;
+text-decoration:none;
 }
 /*マウスが乗っている時*/
 a:hover {
 color:#999;
-text-decoration:underline;
+text-decoration:none;
 }
 /*クリック中 */
 a:active {
