@@ -18,23 +18,10 @@ body{
   }
 .title img{
   width:100%;
-  height:90vh;
-  padding-bottom:5%;
- }
-/*
-.title a{
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
-  font-size:70%;
+  height:50vh;
 
-}
-*/
+ }
+
 
 /**
 プロフィール
@@ -43,10 +30,11 @@ body{
   text-align: center;
   position:relative;
   display: flex;
-  align-items: stretch;
+  align-items:stretch;
   background-color: #009B3A;
-  height: 341px;
+  height: 50vh;
   margin: ;
+  box-sizing: border-box;
   /*border-top:solid 2px;
   border-bottom:solid 2px;
   border-collapse:collapse ;
@@ -55,50 +43,33 @@ body{
 .prof h2{
     background-color: #009B3A;
   }
-.my_image{
 
-}
-.prof img{
-    width:100%;
-    height:100%;
-
-   }
 .introduction{
-  flex:1;
+  flex-grow:2;
   height: 100%;
 }
-.introduction table{
-  width:480px;
+.my_image{
   height: 100%;
-}
- table,td,th{
-  text-align: center;
-  margin:auto;
-  border-collapse:collapse ;
-  border: medium solid #ff00ff;
- }
+  /*flex-basis: 33%;*/
 
-  .line p{
-      text-align: left;
-      border: 2px;
-      margin: 20px;
-    }
+}
 
 /**
+コンテンツ
 contents
 **/
 
 .contents{
   display: flex;
   align-items: stretch;
-  height: 400px
+  height: 50vh
   /*width:100%;*/
 }
 
 .menu{
   width:20%;
   height: 100%;
-  background-color: #FFA69E;
+  background-color:rgba(151,252,151,0.9);
   text-align: center;
 }
 .menu h1{
@@ -109,15 +80,15 @@ contents
   border-collapse:collapse ;
 }
 .menu li{
+  font-size:1rem;
   height:calc(100%/6);
   width:100%;
   padding:auto;
   margin:auto;
   text-align: center;
-  background-color: #262730;
+  background-color: rgba(38,156,204,1);
   border-bottom:solid 2px;
   border-collapse:collapse ;
-  background-color: #012169;
   box-sizing:border-box;
 }
 .menu a{
@@ -130,7 +101,7 @@ contents
   background-color: #D33F49;
   display: flex;
   flex-wrap: wrap;
-  height: 400px
+  width:100%;
 }
 .text_item{
   background-color: #B6DCFE;
@@ -207,46 +178,4 @@ contents
   }
 
 
-/**
-Contact(没)
-**/
-/*
-.container{
-  display: flex;
-  flex-direction: row;
-
-}
-.item1{
-  flex:0 1 auto;
-  background-color: #FE5D26;
-  flex-grow: 1;
-}
-.item2{
-  flex:0 2 auto;
-  background-color: #7EBC89;
-  flex-grow: 2;
-}
-textarea{
-  font-size: 18px;
-}
-.flex_in textarea{
-  row:5;
-  width:90%;
-}
-.contact{
-  border:solid 2px;
-  margin-top: 50px;
-  background-color:#F1FAEE;
-}
- .contact input{
-   text-align: left;
- }
- .contact [type="submit"]{
-
- }
- .contact [type="message"]{
-
-   height:100px;
- }
-*/
 #else{display:none;}

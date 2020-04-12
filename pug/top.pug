@@ -16,40 +16,24 @@ html
      include includes/nav
     .title
       a(name='title')
-      h1
-        img(src='../picture/with_fox01.jpg', alt='none')
+        img(src='../picture/title.jpg', alt='none')
         //-a.title(href='#prof') Helllo World
-    h2 ざっくり about me
     .prof
       //.policy
         h1 Applying DCPA cycle      
-      .my_image
-       img.prof(src='../picture/icon02.jpg', alt='profile_img')
       .introduction
-        table
-          tbody
-            tr
-              th 名前
-              td 亀谷　浩也
-            tr
-              th 所属
-              td 公立はこだて未来大学　複雑系知能学科
-              tr
-                th 住
-                td 徳島 → 北海道(函館)           
-            tr
-              th 趣味
-              td ボーリング,筋トレ,スケボー,ゲーム
-            tr
-              th 言語
-              td Python,JAVA,HTML,CSS,C言語;
-    br
-    br
-    h2 ページ一覧
+        .introduction_top
+         h1 このサイト
+         p hogehoge
+        .introduction_bottom
+         h1 亀谷浩也
+         p p
+      .my_image
+       img.prof(src='../picture/prof.jpg', alt='profile_img')
     .contents
      .menu
       ul
-       li this page       
+       li: a(href="active.html") なんか      
        li: a(href="active.html") active
        li: a(href="freedom.html") freedom
        li: a(href="work.html") Work
@@ -68,38 +52,4 @@ html
        include includes/top/portfolio
       .text_item
        include includes/top/contact
-      
-//-     p#bottom anko
-   //- 
-    .contact
-      .container
-        .item1
-          a(name='contact')
-            p お問い合わせ
-          form(action='anko', method='post')
-            | お名前(必須)
-            br
-            input(required='', type='text', name='name')
-            br
-            |       企業または大学(自由記入)
-            br
-            input(type='text', name='from')
-            br
-            |       メールアドレス(必須)
-            br
-            input(required='', type='text', name='mail', placeholder='anko@inko.com', pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')
-            br
-        .item2
-          .flex_in
-            | お問い合わせの種類：　
-            select(name='select_type')
-              option(selicted='-') ----
-              option(value='opinion') ご意見
-              option(value='failure') 不具合
-              option(value='hope') 願望
-            br
-            |       内容
-            br
-            textarea(type='message', name='message')
-            br
-            input(type='submit')
+ 
